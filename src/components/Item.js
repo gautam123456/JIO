@@ -11,7 +11,9 @@ export default class Item extends Component {
   }
 
   handleError = (error) => {
-    this.setState({img: defaultImage});
+    setTimeout(() => {
+      this.setState({img: defaultImage});
+    }, 2000);
   }
 
   render() {
