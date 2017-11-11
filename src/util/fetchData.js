@@ -26,7 +26,7 @@ export default function fetchData() {
 
       setTimeout(() => {
         resolve(data);
-      }, 1000);
+      }, 2000);
 
     })
 }

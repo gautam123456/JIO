@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ItemList from './ItemList';
 import fetchData from "../util/fetchData";
+import Loading from "./Loading";
 
 export default class AppComponent extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ export default class AppComponent extends Component {
 
     return (
       <div className='container'>
-        {data.data ? <ItemList data={data.data}/> : null}
+        {data.data ? <ItemList data={data.data}/> : <Loading />}
       </div>
     )
   }

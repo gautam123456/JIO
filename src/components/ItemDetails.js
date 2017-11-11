@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Img from './Img';
 import fetchData from '../util/fetchData';
 import {defaultImage} from '../util/constants.json';
+import Loading from './Loading';
 
 export default class Item extends Component {
 
@@ -55,7 +56,7 @@ export default class Item extends Component {
       )
 
     } else {
-      return <div className='loading'>Loading...</div>
+      return <Loading />
     }
   }
 }

@@ -8,7 +8,8 @@
           '/assets/app.js',
           '/styles/assets/1.jpg',
           '/styles/assets/2.jpg',
-          '/styles/assets/3.jpg'
+          '/styles/assets/3.jpg',
+          '/styles/assets/loading.gif'
         ]);
       })
     );
