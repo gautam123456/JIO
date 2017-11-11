@@ -4,11 +4,17 @@ body{
 }
 *{
   box-sizing: border-box;
+  text-decoration: none;
 }
 .container{
   background-color: #eee;
   display: flex;
   justify-content: center;
+
+  a:visited {
+    color: #555;
+    text-decoration: none;
+  }
 
   .item{
     background-color: #fff;
@@ -73,6 +79,7 @@ body{
     .details{
       padding: 0 10px;
       max-width: 500px;
+      color: #444;
 
       @media screen and (max-width: 415px){
         max-width: 100%;
