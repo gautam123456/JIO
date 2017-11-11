@@ -1,0 +1,106 @@
+body{
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+
+  .item{
+    background-color: #fff;
+    margin: 8px;
+    display: flex;
+    box-shadow: 0 2px 2px 0 #ccc;
+    flex-shrink: 1;
+
+    > div{
+      margin: 10px;
+    }
+
+    .details,.image-container{
+      display: inline-block;
+    }
+
+    .image-container{
+      height: 200px;
+
+      img, .placeholder{
+        width: 200px;
+        height: 200px;
+      }
+
+      .placeholder{
+          -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+          -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+          -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+          -webkit-animation-name: placeHolderShimmer;
+          animation-name: placeHolderShimmer;
+          -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+          background: #f6f7f8;
+          background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+          background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+          background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+          -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+          height: 200px;
+          position: relative;
+          display: inline-block;
+      }
+    }
+
+    .desc{
+      font-size: 12px;
+      color: #777;
+    }
+
+    .details{
+      padding: 0 10px;
+    }
+  }
+}
+
+@-webkit-keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
+
+.loading{
+  text-align: center;
+  height: 100vh;
+  padding-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
