@@ -16,6 +16,11 @@ body{
     display: flex;
     box-shadow: 0 2px 2px 0 #ccc;
     flex-shrink: 1;
+    padding: 5px;
+
+    @media screen and (max-width: 415px){
+      display: block;
+    }
 
     > div{
       margin: 10px;
@@ -23,6 +28,10 @@ body{
 
     .details,.image-container{
       display: inline-block;
+
+      @media screen and (max-width: 415px){
+        display: block;
+      }
     }
 
     .image-container{
@@ -63,6 +72,15 @@ body{
 
     .details{
       padding: 0 10px;
+      max-width: 500px;
+
+      @media screen and (max-width: 415px){
+        max-width: 100%;
+      }
+
+      div{
+        margin-bottom: 10px;
+      }
     }
   }
 }
